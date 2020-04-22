@@ -1,0 +1,16 @@
+
+.my-chart {
+    #funds-line-view {
+        max-width: $width;
+        width: 100%;
+        margin: 8px auto 0;
+        min-height: 450px;
+        background-color: #fff;
+    }
+    .last-update {
+        text-align: center;
+        font-size: 14px;
+        color: #777;
+        margin: 4px 0;
+    }
+}

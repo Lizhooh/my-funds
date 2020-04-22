@@ -1,0 +1,22 @@
+
+.exponent {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin: 4px 0;
+
+    .exp {
+        padding: 0 4px;
+        width: 150px;
+        display: inline-block;
+        text-align: left;
+        .red {
+            color: #e12;
+            font-weight: bold;
+        }
+        .green {
+            color: #3b3;
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+
+.news-24time {
+    width: 560px;
+    height: 820px;
+    border: 0.3px solid #f4f4f4;
+    margin-top: 30px;
+    box-shadow: 1px 1px 12px rgba(1, 1, 1, 0.03);
+    overflow: auto;
+
+    &-item {
+        list-style: none;
+        padding: 6px;
+        margin: 5px;
+        border-top: 0.5px solid #eee;
+        cursor: default;
+        &:hover {
+            border-radius: 10px;
+            box-shadow:
+                1px 1px 3px rgba(1, 1, 1, 0.09),
+                -1px 0 1px rgba(1, 1, 1, 0.09);
+            background-color: #fefefe;
+            border-color: transparent;
+        }
+        &:first-of-type {
+            border: 0;
+        }
+        > span {
+            font-size: 13px;
+            color: #f44;
+            float: right;
+            margin-left: 5px;
+            margin-top: 1px;
+            text-shadow: 1px 1px 1px rgba(1, 1, 1, 0.05);
+            font-weight: 400;
+        }
+        > h4 {
+            font-size: 15px;
+            margin: 0;
+            margin-bottom: 3px;
+            color: #383838;
+            line-height: 1.45;
+            text-shadow: 1px 1px 1px #01010108;
+            font-family: '微软雅黑';
+            a {
+                color: #383838;
+            }
+            &.red {
+                color: #e34;
+                a {
+                    color: #e34;
+                }
+            }
+            .yid {
+                background-color: #f34;
+                color: #fff;
+                font-size: 11px;
+                border-radius: 3px;
+                padding: 0 2px 1px;
+                margin-right: 5px;
+            }
+        }
+        > div {
+            font-size: 13px;
+            color: #888;
+            line-height: 1.4;
+            .tag {
+                font-size: 12px;
+                padding: 0 4px 1px;
+                border-radius: 4px;
+                border: 0.5px solid #3c5;
+                margin-right: 6px;
+                color: #3c5;
+                float: right;
+                &:first-of-type {
+                    margin-right: 0;
+                }
+            }
+            .tag-info {
+                font-size: 12px;
+                // border-radius: 4px;
+                margin-left: 8px;
+                border-bottom: 1px dashed #eee;
+                padding-bottom: 2px;
+                color: #f80;
+                &:first-of-type {
+                    margin-left: 0;
+                }
+            }
+            &.red {
+                color: #f67;
+                a {
+                    color: #f67;
+                }
+            }
+        }
+    }
+}

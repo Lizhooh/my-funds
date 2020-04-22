@@ -1,0 +1,33 @@
+
+.main {
+    display: flex;
+    justify-content: center;
+    .funds {
+        padding: 0 20px;
+    }
+    .nav {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        box-shadow: 1px 2px 3px rgba(1, 1, 1, 0.12);
+        background-color: #fefefe;
+        padding: 4px 8px;
+        border-radius: 5px;
+
+        a {
+            font-size: 13px;
+            color: #678;
+            &:hover {
+                color: #39f;
+            }
+        }
+    }
+}
+
+.section {
+    max-width: $width;
+    width: 100%;
+    margin: 0 auto 10px;
+    border: 0.3px solid #f4f4f4;
+}
+

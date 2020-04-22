@@ -1,0 +1,129 @@
+
+.quantify {
+    padding: 20px;
+    width: 360 * 3px;
+    margin: auto;
+
+    .nav {
+        padding: 20px;
+        box-shadow: 0 0 3px rgba(1, 1, 1, 0.08);
+        background-color: #fefefe;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        > span {
+            font-size: 15px;
+            margin: 0 12px;
+            &:hover {
+                cursor: pointer;
+                color: #3af;
+            }
+            &.active {
+                color: #39f;
+                font-weight: bold;
+            }
+        }
+    }
+
+    &::after {
+        content: ' ';
+        display: table;
+        clear: both;
+    }
+
+    &::-webkit-scrollbar {
+        width: 6px;
+        &-track-piece {
+            background-color:#fff;
+            border-radius: 3;
+        }
+        &-thumb {
+            background-color: rgba(1, 1, 1, 0.08);
+            border-radius: 7px;
+        }
+    }
+
+    .item {
+        width: 350px;
+        padding: 8px 4px;
+        margin: 8px 0;
+        padding-right: 0;
+        float: left;
+        box-sizing: border-box;
+
+        .red {
+            color: #f45;
+        }
+        .green {
+            color: #2a3 !important;
+        }
+
+        .title {
+            font-size: 16px;
+            margin: 0;
+            flex: 1;
+            font-weight: bold;
+            color: #234;
+        }
+
+        .data {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+            span {
+                font-size: 14px;
+                color: #f45;
+            }
+            .action {
+                font-size: 14px;
+                border-radius: 10px;
+                border: 0.5px dashed;
+                padding: 0 8px 0;
+                margin-right: 12px;
+                font-weight: bold;
+            }
+        }
+
+        > section {
+            font-size: 14px;
+            color: #789;
+            margin: 8px 0;
+            img {
+                float: right;
+                width: 24px;
+                height: 24px;
+            }
+            .up {
+                transform: rotate(180deg);
+            }
+        }
+
+        footer {
+            width: 318px;
+            height: 198px;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 16px;
+            background-color: #f9f9f9;
+            img {
+                position: absolute;
+                top: -1px; left: -1px;
+                border: 0;
+            }
+        }
+    }
+
+    .goHome {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        font-size: 14px;
+        color: #567;
+        background-color: #fefefe;
+        box-shadow: 1px 2px 3px rgba(1, 1, 1, 0.12);
+        padding: 4px 8px;
+        border-radius: 5px;
+    }
+}
